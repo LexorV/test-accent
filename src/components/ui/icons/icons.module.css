@@ -1,0 +1,18 @@
+.icon_box {
+    position: relative;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.icon_box:hover {
+    opacity: 0.8;
+}
+
+.count {
+    font-size: 18px;
+    margin: 0;
+    position: absolute;
+    bottom:1px;
+    right: -8px;
+}

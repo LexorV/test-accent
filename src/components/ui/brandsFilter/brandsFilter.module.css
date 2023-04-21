@@ -1,0 +1,42 @@
+.main {
+    border: none;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .checkbox:checked+label::before {
+    border-color: #0b76ef;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' width='40px' height='40px'%3e%3cpath fill='%23dff0fe' d='M1.707 22.199L4.486 19.42 13.362 28.297 35.514 6.145 38.293 8.924 13.362 33.855z'/%3e%3cpath fill='%234788c7' d='M35.514,6.852l2.072,2.072L13.363,33.148L2.414,22.199l2.072-2.072l8.169,8.169l0.707,0.707 l0.707-0.707L35.514,6.852 M35.514,5.438L13.363,27.59l-8.876-8.876L1,22.199l12.363,12.363L39,8.924L35.514,5.438L35.514,5.438z'/%3e%3c/svg%3e");
+  }
+  .checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #b6b9bd;
+    border-radius: 4px;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90% 90%;
+  }
+  .checkbox:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+  .checkbox:disabled+label::before {
+    background-color: #e9ecef;
+  }

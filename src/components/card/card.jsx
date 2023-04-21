@@ -11,13 +11,14 @@ export const Card = ({data}) => {
       })();
     return (
         <li className={styles.main}> 
-        <h3>{data.title}</h3>
+        <h3 className={styles.title}>{data.title}</h3>
             <img
             className={styles.picture} 
             alt={data.title}
             src={image}></img>
-                 <p> Брэнд: {data.brand}</p>
-                <p>Цена:{data.regular_price.value} {data.regular_price.currency}</p>
+                 <p className={styles.text}> Брэнд: {data.brand}</p>
+                <p className={styles.text}>Цена: {data.regular_price.value} {data.regular_price.currency}</p>
+                <button className={styles.button}>Добавить в корзину</button>
         </li>
     )
 }

@@ -10,5 +10,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+}
+.product_box {
     max-width: 1080px;
+}
+.basket_panel {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    width: 100%;
+}
+.main_box {
+    display: flex;
 }
